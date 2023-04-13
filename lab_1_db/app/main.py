@@ -226,10 +226,6 @@ with open(csv_zno_2019, 'r', encoding="cp1251", errors='ignore') as inf:
     row_num1 = len(reader1)
     print('Number of rows 2019: ', row_num1)
 
-with open(csv_zno_2021, 'r', encoding="utf-8", errors='ignore') as inf:
-    reader2 = list(csv.reader(inf, delimiter=';'))
-    row_num2 = len(reader2)
-    print('Number of rows 2021: ',row_num2)
 
 start_idx = 1
 end_idx = 400
@@ -271,6 +267,11 @@ while start_idx < row_num1:
     list1.clear()
 reader1.clear()
 print('DATA FROM FILE 2019 LOADED TO DB')
+
+with open(csv_zno_2021, 'r', encoding="utf-8", errors='ignore') as inf:
+    reader2 = list(csv.reader(inf, delimiter=';'))
+    row_num2 = len(reader2)
+    print('Number of rows 2021: ',row_num2)
 
 start_idx = 1
 end_idx = 400
