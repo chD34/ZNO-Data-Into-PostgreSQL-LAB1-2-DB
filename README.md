@@ -1,3 +1,3 @@
-Проект для завантаження даних результатів зовнішнього незалежного оцінювання у базу даних PostgreSQL 
-з використанням Docker-контейнерів, міграція за допомогою Flyway для утворення нових таблиць із старої 
-приведених до нормальної форми
+Project for uploading data of the results of an external independent assessment(ZNO) to a PostgreSQL database 
+using Docker containers, migration using Flyway to create new tables from the old one 
+and transformation to normal form.
